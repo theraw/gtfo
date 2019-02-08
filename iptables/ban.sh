@@ -2,6 +2,7 @@
 # MIX, SPAMMERS, DDOS ATTACKS,
 iptables -A INPUT -s 52.90.0.0/15 -j DROP
 iptables -A INPUT -s 176.9.0.0/16 -j DROP
+iptables -A INPUT -s 61.184.0.0/16 -j DROP
 iptables -A INPUT -s 217.23.0.0/20 -j DROP
 iptables -A INPUT -s 45.77.84.0/22 -j DROP
 iptables -A INPUT -s 35.176.0.0/15 -j DROP
@@ -19,7 +20,11 @@ iptables -A INPUT -s 41.226.128.0/19 -j DROP
 iptables -A INPUT -s 168.128.13.0/24 -j DROP
 iptables -A INPUT -s 207.246.96.0/20 -j DROP
 iptables -A INPUT -s 159.65.192.0/20 -j DROP
+iptables -A INPUT -s 180.151.48.0/24 -j DROP
+iptables -A INPUT -s 132.145.32.0/20 -j DROP
+iptables -A INPUT -s 197.48.128.0/18 -j DROP
 iptables -A INPUT -s 198.143.128.0/18 -j DROP
+iptables -A INPUT -s 122.226.180.0/23 -j DROP
 
 # WHOLE LINODE RIGHT HERE! #1 SPAMMING PROVIDER USED.
 iptables -A INPUT -s 23.92.16.0/21 -j DROP
