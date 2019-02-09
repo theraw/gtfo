@@ -1,6 +1,7 @@
 #!/bin/bash
 # MIX, SPAMMERS, DDOS ATTACKS,
 iptables -I INPUT -s 52.90.0.0/15 -j DROP
+iptables -I INPUT -s 52.52.0.0/15 -j DROP
 iptables -I INPUT -s 176.9.0.0/16 -j DROP
 iptables -I INPUT -s 61.184.0.0/16 -j DROP
 iptables -I INPUT -s 217.23.0.0/20 -j DROP
@@ -25,6 +26,7 @@ iptables -I INPUT -s 132.145.32.0/20 -j DROP
 iptables -I INPUT -s 197.48.128.0/18 -j DROP
 iptables -I INPUT -s 198.143.128.0/18 -j DROP
 iptables -I INPUT -s 122.226.180.0/23 -j DROP
+iptables -I INPUT -s 178.128.224.0/20 -j DROP
 
 # WHOLE LINODE RIGHT HERE! #1 SPAMMING PROVIDER USED.
 iptables -I INPUT -s 23.92.16.0/21 -j DROP
