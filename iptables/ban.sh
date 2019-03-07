@@ -13,6 +13,7 @@ iptables -I INPUT -s 144.76.0.0/16 -j DROP
 iptables -I INPUT -s 80.82.77.0/24 -j DROP
 iptables -I INPUT -s 46.17.46.0/23 -j DROP
 iptables -I INPUT -s 144.76.0.0/16 -j DROP
+iptables -I INPUT -s 46.118.0.0/15 -j DROP
 iptables -I INPUT -s 46.252.27.0/24 -j DROP
 iptables -I INPUT -s 176.47.93.0/24 -j DROP
 iptables -I INPUT -s 137.226.0.0/16 -j DROP
