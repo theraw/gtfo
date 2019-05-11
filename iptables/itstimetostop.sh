@@ -31,6 +31,7 @@ iptables -I INPUT -s 58.19.64.0/18 -j DROP
 iptables -I INPUT -s 106.45.0.0/16 -j DROP
 iptables -I INPUT -s 162.243.128.0/19 -j DROP
 iptables -I INPUT -s 63.143.32.0/19 -j DROP
+iptables -I INPUT -s 119.176.0.0/12 -j DROP
 
 
 # ==========================================
