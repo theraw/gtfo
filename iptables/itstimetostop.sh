@@ -93,3 +93,7 @@ iptables -I INPUT -s 128.199.195.156 -j DROP
 iptables -I INPUT -s 138.197.150.151 -j DROP
 iptables -I INPUT -s 34.233.66.117 -j DROP
 # ==========================================
+
+# ==========================================
+# COMBO https://github.com/stamparm/ipsum
+for ip in $(curl --compressed https://raw.githubusercontent.com/stamparm/ipsum/master/ipsum.txt 2>/dev/null | grep -v "#" | grep -v -E "\s[1-2]$" | cut -f 1); do iptables -I INPUT -s $ip/32 -j DROP; done
